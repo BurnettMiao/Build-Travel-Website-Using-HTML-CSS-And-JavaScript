@@ -72,7 +72,6 @@ a {
 }
 
 /* header section */
-
 header {
   margin: 1rem;
   background-color: #f8f7f5;
@@ -261,6 +260,24 @@ nav {
   border-radius: 5px;
 }
 
+/* travel section */
+.travel__container {
+  display: grid;
+  gap: 2rem;
+}
+
+.travel__image img {
+  max-width: 450px;
+  margin-inline: auto;
+  border-radius: var(--border-radius);
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.travel__content img {
+  margin-top: 4rem;
+  max-width: 300px;
+}
+
 @media (width > 768px) {
   .header__container {
     grid-template-columns: repeat(2, 1fr);
@@ -278,5 +295,10 @@ nav {
 
   .header__btns {
     justify-content: flex-start;
+  }
+
+  .travel__container {
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
   }
 }
