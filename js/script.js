@@ -28,3 +28,13 @@ navLinks.addEventListener('click', (e) => {
     { once: true }
   );
 });
+
+// explore section
+const explore = document.querySelector('.explore__wrapper-inner');
+const exploreContent = Array.from(explore.children);
+
+exploreContent.forEach((item) => {
+  const duplicateNode = item.cloneNode(true);
+  duplicateNode.setAttribute('aria-hidden', true);
+  explore.appendChild(duplicateNode);
+});
