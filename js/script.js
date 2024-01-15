@@ -38,3 +38,8 @@ exploreContent.forEach((item) => {
   duplicateNode.setAttribute('aria-hidden', true);
   explore.appendChild(duplicateNode);
 });
+
+const swiper = new Swiper('.swiper', {
+  slidesPerView: 'auto',
+  spaceBetween: 20,
+});
