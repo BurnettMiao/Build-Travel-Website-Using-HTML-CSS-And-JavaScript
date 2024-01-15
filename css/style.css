@@ -314,7 +314,7 @@ nav {
 }
 
 .discover__grid h4 {
-  margin-top: 1rem;
+  margin-bottom: 1rem;
   font-size: 2rem;
   font-weight: 600;
   line-height: 2rem;
@@ -416,6 +416,114 @@ nav {
   background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
   border-radius: 1.25rem;
+}
+
+/* faq section */
+.faq__container .section__header {
+  text-align: center;
+}
+
+.faq__grid {
+  margin-top: 4rem;
+  max-width: 900px;
+  margin-inline: auto;
+  display: grid;
+  gap: 1rem;
+}
+
+.faq__card {
+  padding: 1.5rem;
+  display: grid;
+  gap: 1rem;
+  background-color: #f8f7f5;
+  border-radius: 1rem;
+}
+
+.faq__header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.faq__header h4 {
+  font-size: 1.2rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.faq__header span {
+  font-size: 1.5rem;
+  transition: 0.3s;
+  cursor: pointer;
+}
+
+.faq__card.active .faq__header span {
+  transform: rotate(180deg);
+}
+
+.faq__content {
+  font-weight: 500;
+  color: var(--text-dark);
+  display: none;
+}
+
+.faq__card.active .faq__content {
+  display: block;
+}
+
+.footer__container {
+  text-align: center;
+}
+
+.footer__socials {
+  margin-block: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+
+.footer__socials a {
+  padding: 2px 8px;
+  font-size: 1.5rem;
+  color: var(--white);
+  background-color: var(--text-dark);
+  border-radius: 100%;
+  transition: 0.3s;
+}
+
+.footer__socials a:hover {
+  background-color: var(--primary-color);
+}
+
+.footer__links {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.footer__links a {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: var(--text-dark);
+  transition: 0.3s;
+}
+
+.footer__links a:hover {
+  color: var(--primary-color);
+}
+
+.footer__bar {
+  padding: 1rem;
+  font-size: 0.9rem;
+  color: var(--text-dark);
+  text-align: center;
+  border-top: 1px solid gray;
 }
 
 @media (width > 560px) {
